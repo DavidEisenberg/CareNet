@@ -1,0 +1,590 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 8 - http://www.wysiwygwebbuilder.com">
+<style type="text/css">
+body
+{
+  background-color: #EDF0F5;
+  color: #000000;
+}
+</style>
+<style type="text/css">
+a
+{
+  color: #0000FF;
+  text-decoration: underline;
+}
+a:visited
+{
+  color: #800080;
+}
+a:active
+{
+  color: #FF0000;
+}
+a:hover
+{
+  color: #0000FF;
+  text-decoration: underline;
+}
+</style>
+<link rel="stylesheet" href="cupertino/jquery.ui.all.css" type="text/css">
+<style type="text/css">
+#TextArea1
+{
+  border: 1px #C0C0C0 solid;
+  background-color: #FFFFFF;
+  color :#000000;
+  font-family: Arial;
+  font-size: 13px;
+  text-align: left;
+}
+#Table1
+{
+  border: 2px #C0C0C0 solid;
+  background-color: transparent;
+  border-spacing: 1px;
+}
+#Table1 td
+{
+  padding: 0px 0px 0px 0px;
+}
+#Table1 td div
+{
+  white-space: nowrap;
+}
+#Table2
+{
+  border: 2px #C0C0C0 solid;
+  background-color: #8B008B;
+  border-spacing: 1px;
+}
+#Table2 td
+{
+  padding: 0px 0px 0px 0px;
+}
+#Table2 td div
+{
+  white-space: nowrap;
+}
+#wb_Text1 
+{
+  background-color: transparent;
+  border: 0px #000000 solid;
+  padding: 0;
+}
+#wb_Text1 div
+{
+  text-align: center;
+}
+#wb_Text4 
+{
+  background-color: transparent;
+  border: 0px #000000 solid;
+  padding: 0;
+}
+#wb_Text4 div
+{
+  text-align: left;
+}
+#MegaMenu1
+{
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Arial;
+  font-size: 16px;
+}
+#MegaMenu1 li
+{
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#MegaMenu1 li a
+{
+  float: left;
+}
+#MegaMenu1 li .submenu
+{
+  display: none;
+  float: left;
+  left: 0;
+  padding: 5px 0px 5px 0px;
+  position: absolute;
+  top: 0;
+}
+#MegaMenu1 li .row
+{
+  clear: both;
+  float: left;
+  margin-bottom: 10px;
+  width: 100%;
+}
+#MegaMenu1 li .submenu ul
+{
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}
+#MegaMenu1 .submenu ul li
+{
+  width: 100%;
+}
+#MegaMenu1 .submenu ul li h2
+{
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+#MegaMenu1 .submenu ul li h2 a
+{
+  background-image: none;
+  background-color: transparent;
+  border-width: 0;
+  font-weight: bold;
+  font-style: normal;
+  padding: 5px 0;
+  text-decoration: none;
+}
+#MegaMenu1 .submenu ul li h2 a:hover
+{
+  padding: 5px 0;
+}
+#MegaMenu1 .submenu ul li a
+{
+  display: block;
+  float: none;
+  font-weight: bold;
+  font-style: normal;
+  height: auto;
+  padding: 6px 1px 6px 1px;
+  text-decoration: none;
+  text-indent: 0;
+}
+#MegaMenu1 .submenu ul li a:hover
+{
+  padding: 5px 0px 5px 0px;
+}
+#MegaMenu1 .submenu ul li a .ui-icon
+{
+  left: 0;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+}
+#MegaMenu1 .button
+{
+  cursor: pointer;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0 1px 0 0;
+  outline: 0;
+  padding: 4px 20px 4px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  color: #2779AA;
+}
+#MegaMenu1 .button:hover
+{
+  color: #0070A3;
+}
+#MegaMenu1 .button:active
+{
+  color: #FFFFFF;
+}
+#MegaMenu1 .button .ui-icon
+{
+  left: auto;
+  margin-top: -8px;
+  margin-left: 0;
+  position: absolute;
+  right: 4px;
+  top: 50%;
+}
+#wb_Text2 
+{
+  background-color: transparent;
+  border: 0px #000000 solid;
+  padding: 0;
+}
+#wb_Text2 div
+{
+  text-align: left;
+}
+#TextArea2
+{
+  border: 1px #C0C0C0 solid;
+  background-color: #FFFFFF;
+  color :#000000;
+  font-family: Arial;
+  font-size: 13px;
+  text-align: left;
+}
+</style>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+  $('#MegaMenu1 .submenu ul li h2 a').addClass('ui-widget-header');
+  $('#MegaMenu1 .submenu ul li a').hover(function()
+  {
+     $(this).addClass('ui-state-default');
+  }, function()
+  {
+     $(this).removeClass('ui-state-default');
+  });
+  $('.ui-state-default').hover(function()
+  {
+     $(this).addClass('ui-state-hover');
+  }, function()
+  {
+     $(this).removeClass('ui-state-hover');
+  });
+  $('#MegaMenu1 li').hover(function()
+  {
+     var top = $(this).find('.button').outerHeight();
+     $(this).find('.submenu').css( {'top': top });
+     $(this).find('.submenu').stop().fadeTo('fast', 1).show();
+     if ($(this).find('.row').length > 0 )
+     {
+        var maxRowWidth = 0;
+        $(this).find('.row').each(function()
+        {
+           var width = 0;
+           $(this).find('ul').each(function()
+           {
+              width += $(this).width();
+           });
+           if (width > maxRowWidth)
+           {
+              maxRowWidth = width;
+           }
+        });
+        $(this).find('.submenu').css({'width' : maxRowWidth});
+        $(this).find('.row:last').css({'margin': '0'});
+     }
+     else
+     {
+        var width = 0;
+        $(this).find('ul').each(function()
+        {
+           width += $(this).width();
+        });
+        $(this).find('.submenu').css({'width' : width});
+     }
+     $(this).find('.submenu').slideDown();
+  }, function()
+  {
+     $(this).find('.submenu').stop().fadeTo('fast', 0, function()
+     {
+        $(this).hide();
+     });
+  })
+  $('#MegaMenu1 li .submenu').hide();
+});
+</script>
+</head>
+<body>
+<textarea name="TextArea1" id="TextArea1" style="position:absolute;left:60px;top:195px;width:700px;height:322px;z-index:0;" rows="19" cols="111"></textarea>
+<table style="position:absolute;left:61px;top:220px;width:680px;height:301px;z-index:1;" cellpadding="0" cellspacing="1" id="Table1">
+<tr>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;"> Abatacept</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">10 mg</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">PCP</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:center;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#228B22;font-family:Arial;font-size:17px;"><strong>Yes</strong></span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;height:34px;">
+&nbsp;</td>
+</tr>
+<tr>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">Abatacept</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">10 mg</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">Cardiologist</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:center;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#FF1493;font-family:Arial;font-size:17px;"><strong>No</strong></span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:top;height:34px;">
+&nbsp;</td>
+</tr>
+<tr>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:32px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">Abciximab</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:32px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">10 mg</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:32px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">PCP</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:center;vertical-align:middle;width:132px;height:32px;">
+<div><span style="color:#228B22;font-family:Arial;font-size:17px;"><strong>Yes</strong></span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:top;height:32px;">
+&nbsp;</td>
+</tr>
+<tr>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">Abelcet</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">5 mg</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">Orthopedician</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:center;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#228B22;font-family:Arial;font-size:17px;"><strong>Yes</strong></span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:top;height:34px;">
+&nbsp;</td>
+</tr>
+<tr>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:36px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">Abilify</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:36px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">10 mg</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:36px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">Nephrologist</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:center;vertical-align:middle;width:132px;height:36px;">
+<div><span style="color:#228B22;font-family:Arial;font-size:17px;"><strong>Yes</strong></span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:top;height:36px;">
+&nbsp;</td>
+</tr>
+<tr>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">Abarelix</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">10 mg</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">PCP</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:center;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#228B22;font-family:Arial;font-size:17px;"><strong>Yes</strong></span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:top;height:34px;">
+&nbsp;</td>
+</tr>
+<tr>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">Aspirin</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">5 mg</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;">PCP</span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:center;vertical-align:middle;width:132px;height:34px;">
+<div><span style="color:#228B22;font-family:Arial;font-size:17px;"><strong>Yes</strong></span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:top;height:34px;">
+&nbsp;</td>
+</tr>
+<tr>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:top;width:132px;height:34px;">
+&nbsp;</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:top;width:132px;height:34px;">
+&nbsp;</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:top;width:132px;height:34px;">
+&nbsp;</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:center;vertical-align:middle;width:132px;height:34px;">
+&nbsp;</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:top;height:34px;">
+&nbsp;</td>
+</tr>
+</table>
+<table style="position:absolute;left:60px;top:197px;width:680px;height:26px;z-index:2;" cellpadding="0" cellspacing="1" id="Table2">
+<tr>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:center;vertical-align:top;width:132px;height:18px;">
+<div><span style="color:#000000;font-family:Arial;font-size:13px;"> </span><span style="background-color:#9932CC;color:#F5F5F5;font-family:Arial;font-size:13px;"><strong>Medication</strong></span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:center;vertical-align:top;width:132px;height:18px;">
+<div><span style="color:#E6E6FA;font-family:Arial;font-size:13px;"><strong>Strength</strong></span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:center;vertical-align:top;width:132px;height:18px;">
+<div><span style="color:#F0F8FF;font-family:Arial;font-size:13px;"><strong>Prescriber</strong></span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:center;vertical-align:top;width:132px;height:18px;">
+<div><span style="color:#F0F8FF;font-family:Arial;font-size:13px;"><strong>Reconcilation</strong></span></div>
+</td>
+<td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:top;height:18px;">
+&nbsp;</td>
+</tr>
+</table>
+<div id="wb_Text1" style="position:absolute;left:90px;top:158px;width:597px;height:24px;text-align:center;z-index:3;">
+<span style="color:#0000CD;font-family:Arial;font-size:21px;"><strong>Medication Error Reconciliation</strong></span></div>
+<div id="wb_Shape1" style="position:absolute;left:0px;top:0px;width:1000px;height:134px;z-index:4;">
+<img src="images/img0001.gif" id="Shape1" alt="" style="border-width:0;width:1000px;height:134px;"></div>
+<div id="wb_Text4" style="position:absolute;left:55px;top:24px;width:226px;height:74px;z-index:5;text-align:left;">
+<span style="color:#F0FFF0;font-family:'Gill Sans MT';font-size:53px;"><strong>CareNet</strong></span></div>
+<div id="wb_MegaMenu1" style="position:absolute;left:0px;top:109px;width:814px;height:29px;z-index:6;">
+  <ul class="ui-widget" id="MegaMenu1">
+     <li>
+     <a href="#" class="button ui-state-default"><span class="ui-icon ui-icon-triangle-1-s"></span>Team</a>
+     <div class="submenu ui-widget-content">
+     <div class="row">
+        <ul style="width:127px">
+           <li><h2><a href="#">All</a></h2></li>
+        </ul>
+     </div>
+     <div class="row">
+        <ul style="width:127px">
+           <li><h2><a href="#">Tests</a></h2></li>
+        </ul>
+     </div>
+     <div class="row">
+        <ul style="width:127px">
+           <li><h2><a href="#">Medications</a></h2></li>
+        </ul>
+     </div>
+     <div class="row">
+        <ul style="width:127px">
+           <li><h2><a href="#">Family History</a></h2></li>
+        </ul>
+     </div>
+     </div>
+     </li>
+     <li>
+     <a href="#" class="button ui-state-default"><span class="ui-icon ui-icon-triangle-1-s"></span>EHR</a>
+     <div class="submenu ui-widget-content">
+     <div class="row">
+        <ul style="width:209px">
+           <li><h2><a href="#">Medical History</a></h2></li>
+        </ul>
+     </div>
+     <div class="row">
+        <ul style="width:209px">
+           <li><h2><a href="#">Medical Encounters</a></h2></li>
+        </ul>
+     </div>
+     <div class="row">
+        <ul style="width:209px">
+           <li><h2><a href="#">Medications</a></h2></li>
+        </ul>
+     </div>
+     <div class="row">
+        <ul style="width:209px">
+           <li><h2><a href="#">Orders and Prescriptions</a></h2></li>
+        </ul>
+     </div>
+     <div class="row">
+        <ul style="width:209px">
+           <li><h2><a href="#">Progress Notes</a></h2></li>
+        </ul>
+     </div>
+     <div class="row">
+        <ul style="width:209px">
+           <li><h2><a href="#">Test Results</a></h2></li>
+        </ul>
+     </div>
+     <div class="row">
+        <ul style="width:209px">
+           <li><h2><a href="#">Other Information</a></h2></li>
+        </ul>
+     </div>
+     </div>
+     </li>
+     <li>
+     <a href="#" class="button ui-state-default"><span class="ui-icon ui-icon-triangle-1-s"></span>Chat</a>
+     <div class="submenu ui-widget-content">
+     <div class="row">
+        <ul style="width:141px">
+           <li><h2><a href="#">PCP</a></h2></li>
+        </ul>
+        <ul style="width:141px">
+           <li><h2><a href="#">Cardiologist</a></h2></li>
+        </ul>
+     </div>
+     <div class="row">
+        <ul style="width:141px">
+           <li><h2><a href="#">Nephrologist</a></h2></li>
+        </ul>
+        <ul style="width:141px">
+           <li><h2><a href="#">Orthopedician</a></h2></li>
+        </ul>
+     </div>
+     <div class="row">
+        <ul style="width:141px">
+           <li><h2><a href="#">Physical Trainer</a></h2></li>
+        </ul>
+        <ul style="width:141px">
+           <li><h2><a href="#">Nurse</a></h2></li>
+        </ul>
+     </div>
+     <div class="row">
+        <ul style="width:141px">
+           <li><h2><a href="#">Social Worker</a></h2></li>
+        </ul>
+        <ul style="width:141px">
+           <li><h2><a href="#">Pharmacist</a></h2></li>
+        </ul>
+     </div>
+     <div class="row">
+        <ul style="width:141px">
+           <li><h2><a href="#">Family</a></h2></li>
+        </ul>
+     </div>
+     </li>
+     <li>
+     <a href="#" class="button ui-state-default"><span class="ui-icon ui-icon-triangle-1-s"></span>Share Information</a>
+     <div class="submenu ui-widget-content">
+     </div>
+     </li>
+     <li>
+     <a href="#" class="button ui-state-default"><span class="ui-icon ui-icon-triangle-1-s"></span>My Profile</a>
+     <div class="submenu ui-widget-content">
+     </div>
+     </li>
+     <li>
+     <a href="#" class="button ui-state-default"><span class="ui-icon ui-icon-triangle-1-s"></span>About ...</a>
+     <div class="submenu ui-widget-content">
+     </div>
+     </li>
+     <li>
+     <a href="#" class="button ui-state-default"><span class="ui-icon ui-icon-triangle-1-s"></span>Contact</a>
+     <div class="submenu ui-widget-content">
+     </div>
+     </li>
+  </ul>
+</div>
+<button id="AdvancedButton1" type="button" name="" value="" style="position:absolute;left:606px;top:261px;width:128px;height:34px;z-index:7;"><div style="text-align:center"><span style="color:#000000;font-family:Arial;font-size:13px"><b>Reconcile</b></span></div></button>
+<div id="wb_Text2" style="position:absolute;left:55px;top:534px;width:346px;height:18px;z-index:8;text-align:left;">
+<span style="color:#0000CD;font-family:Arial;font-size:15px;"><strong>Transaction Logs</strong></span></div>
+<textarea name="TextArea2" id="TextArea2" style="position:absolute;left:61px;top:573px;width:696px;height:120px;z-index:9;" rows="6" cols="110">June 8, 2012,  8:00 am: ( by PCP): Abelcet specialist prescription duplicate removed
+July 6, 2012, 12:00 noon (by Dr. John) Added Abilify 10 mg
+July 7, 2012, 4 pm: (by Dr. Martin) Added Aspirin 5 mg</textarea>
+</body>
+</html>
